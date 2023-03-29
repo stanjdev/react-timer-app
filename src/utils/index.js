@@ -9,5 +9,3 @@ export const formatTime = (time) => {
   const hours = Math.floor(mins / 60) % 60;
   return `${pad(hours)}:${pad(mins)}:${pad(secs)}.${ms}`;
 }
-
-console.log(formatTime(157598))
