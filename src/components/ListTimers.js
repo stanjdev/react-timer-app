@@ -6,7 +6,7 @@ export default function ListTimers() {
   const timers = useSelector((state) => state.timers.value)
   return (
     <div>
-      {timers.map((timer, i) => <TimerView key={i} name={timer.name} time={timer.time} isRunning={timer.isRunning} />)}
+      {timers.map((timer, i) => <TimerView key={`timer-${i}`} index={i} {...timer} />)}
     </div>
   )
 }
