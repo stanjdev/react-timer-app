@@ -6,18 +6,23 @@
 .NewTimer > input {
 	font-size: 1rem;
 	padding: 0.25rem 0.5rem;
-	border-radius: 0.5rem 0 0 0.5rem;
-	border: 1px solid;
+	/* border: 1px solid; */
+	border: none;
 	margin: 0;
+}
+
+.NewTimer > .name-input {
+	border-radius: 0.5rem 0 0 0.5rem;
+	border-right: 1px solid #282c34;
 }
 
 .NewTimer > button {
 	font-size: 1rem;
 	padding: 0.25rem 0.5rem;
 	border-radius: 0 0.5rem 0.5rem 0;
-	border: 1px solid #000;
+	border: 1px solid #3d8097;
 	margin: 0;
-	background-color: #000;
+	background-color: #3d8097;
 	color: #fff;
 	font-weight: bold;
 }

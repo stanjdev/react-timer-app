@@ -1,13 +1,12 @@
 import React from 'react';
 
-export default function createTimer(name) {
+export default function createTimer(name, description) {
   return {
     name,
+    description,
     time: 0,
     isRunning: false
   }
 }
-
-const myTimer = createTimer('Workout');
 
 

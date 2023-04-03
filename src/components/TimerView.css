@@ -1,5 +1,4 @@
 .TimerView {
-	width: 320px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -13,17 +12,27 @@
 	font-variant-numeric: tabular-nums;
 }
 
-.TimerView > h2 {
+.TimerView > div > h2, .TimerView > div > small {
 	flex: 1;
+	margin-bottom: 0;
 }
 
 .TimerView > button {
 	padding: 0.25rem 0.5rem;
 	border-radius: 0.5rem;
-	border: 1px solid #000;
-	background-color: #000;
+	border: none;
+	background-color: #5ce18d;
 	color: #fff;
 	font-size: 1rem;
 	font-weight: bold;
 	width: 4rem;
+	margin: 0px 2px;
+}
+
+.TimerView > .resetButton {
+	background-color: #4e4e4e;
+}
+
+.TimerView > .deleteButton {
+	background-color: #993131;
 }
