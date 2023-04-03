@@ -8,6 +8,10 @@ import { addTimer } from '../features/timers/timersSlice';
 export default function NewTimer() {
   const [name, setName] = useState('');
   const dispatch = useDispatch();
+  const createNewTimer = () => {
+    dispatch(addTimer(name));
+    setName('');
+  };
 
   return (
     <div className="NewTimer">
@@ -19,7 +23,7 @@ export default function NewTimer() {
         onChange={((evt) => setName(evt.target.value))}
       />
       <button
-        onClick={(() =>dispatch(addTimer(name)))}
+        onClick={createNewTimer}
       >Save</button>
     </div>
   )
