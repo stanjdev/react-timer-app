@@ -1,5 +1,3 @@
-import React from 'react';
-
 export default function createTimer(name, description) {
   return {
     name,
@@ -8,5 +6,3 @@ export default function createTimer(name, description) {
     isRunning: false
   }
 }
-
-
