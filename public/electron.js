@@ -83,15 +83,15 @@ async function createWindow() {
   // and load the index.html of the app.
   // win.loadFile("index.html");
   mainWindow.loadURL(
-    isDev
+    !isDev
       ? "http://localhost:3000"
       : `file://${path.join(__dirname, "../build/index.html")}`
   );
 
   // Open the DevTools.
-  if (isDev) {
-    mainWindow.webContents.openDevTools({ mode: "detach" });
-  }
+  // if (isDev) {
+  //   mainWindow.webContents.openDevTools({ mode: "detach" });
+  // }
 }
 
 // This method will be called when Electron has finished
